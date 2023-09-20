@@ -1,0 +1,14 @@
+.wrap{
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    background-image: url('/src/images/images/model-s.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+}
+.itemText{
+    padding-top: 15vh;
+    text-transform: capitalize;
+}

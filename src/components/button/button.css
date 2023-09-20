@@ -1,0 +1,41 @@
+.btn-group{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 55vh;
+}
+.color-btn{
+    width: 256px;
+    height: 40px;
+    color: #ffffff;
+    background-color: #393c41;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer; 
+    font-weight: 400;
+    font-size: 15px;
+}
+.btn{
+    width: 256px;
+    height: 40px;
+    color: #393c41;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer; 
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.downArrow img{
+    height: 40px;
+    margin-top: 25px;
+    overflow: hidden;
+    animation: animateDown infinite 5.5ms ease-in-out;
+}
