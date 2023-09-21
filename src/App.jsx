@@ -6,7 +6,7 @@ import './app.css'
 const App = () => {
   return (
     <div>
-       {/* <Header/>  */}
+       <Header/> 
        <Home/>
     </div>
   )

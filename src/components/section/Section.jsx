@@ -4,9 +4,9 @@ import './section.css'
 import Button from '../button/Button'
 import down from '../../images/images/down-arrow.svg'
 
-const Section = ({title, description, rightBtnText, leftBtnText, backgroundImg}) => {
+const Section = ({title, description, rightBtnText, leftBtnText, backgroundImg} ) => {
   return (
-    <div className='wrap' bgImage={backgroundImg}>
+    <div className='wrap' backgroundImg={backgroundImg}>
       <div className="itemText">
         <h1>{title}</h1>
         <p>{description}</p>

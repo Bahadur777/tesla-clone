@@ -4,7 +4,7 @@ import './home.css'
 import model from '../../images/images/model-x.jpg'
 
 
-const Home = ({backgroundImg, bgImage}) => {
+const Home = ({backgroundImgs}) => {
   return (
     <div>
       <Section
@@ -12,28 +12,28 @@ const Home = ({backgroundImg, bgImage}) => {
       description="Order Online For Touchless Delivery"
       leftBtnText="Custom order"
       rightBtnText="Exiting Inventory"
-      backgroundImg="model-s.jpg"
+      backgroundImg={model}
       />
       <Section
        title="Model Y"
        description="Order Online For Touchless Delivery"
        leftBtnText="Custom order"
        rightBtnText="Exiting Inventory"
-       backgroundImg={model}
+       backgroundImg='../../images/images/model-x.jpg'
       />
       <Section
        title="Model X"
        description="Order Online For Touchless Delivery"
        leftBtnText="Custom order"
        rightBtnText="Exiting Inventory"
-       backgroundImg="model-s.jpg"
+       backgroundImg="/src/images/images/model-s.jpg"
       />
       <Section 
         title="Model M"
         description="Order Online For Touchless Delivery"
         leftBtnText="Custom order"
         rightBtnText="Exiting Inventory"
-        backgroundImg="model-s.jpg"
+        backgroundImg="../../images/images/down-arrow.svg"
       />
       <Section
         title="Model L"
