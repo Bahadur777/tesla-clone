@@ -22,6 +22,15 @@ const Header = () => {
           <a href="#">Tesla account</a>
          <CustomIcons/>
       </RightMenu>
+      <BurgerNav>
+        <li><a href="#">Existing Inventory</a></li>
+        <li><a href="#">Existing Inventory</a></li>
+        <li><a href="#">Existing Inventory</a></li>
+        <li><a href="#">Existing Inventory</a></li>
+        <li><a href="#">Existing Inventory</a></li>
+        <li><a href="#">Existing Inventory</a></li>
+
+      </BurgerNav>
     </Container>
   )
 }
@@ -34,6 +43,7 @@ padding:20px 10px;
 position: fixed;
 display:flex;
 align-item:center;
+justify-content:space-between;
 
 top:0;
 left:0;
@@ -55,6 +65,10 @@ const Menu = styled.div `
   font-weight:600;
   text-transform: uppercase;
  }
+
+ @media(max-width:760px){
+  display:none;
+ }
 `
 
 const RightMenu = styled.div`
@@ -67,5 +81,14 @@ const RightMenu = styled.div`
      }
 `
 const CustomIcons = styled(AiOutlineMenu)`
+cursor:pointer;
 `
-
+const BurgerNav = styled.div`
+   position:fixed;
+   top:0;
+   bottom:0;
+   right:0;
+   z-index:100;
+   width:300px;
+   background:#ffff;
+`

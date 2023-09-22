@@ -1,8 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types';
+
 import './section.css'
 import Button from '../button/Button'
 import down from '../../images/images/down-arrow.svg'
+
 
 const Section = ({title, description, rightBtnText, leftBtnText, backgroundImg} ) => {
   return (
