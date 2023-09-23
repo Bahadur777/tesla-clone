@@ -1,10 +1,13 @@
 import React from 'react'
 import Section from '../section/Section'
 import './home.css'
-import model from '../../images/images/model-x.jpg'
+import model3Img from '../../images/model-3.jpg';
+import modelXImg from '../../images/model-x.jpg';
+import modelSImg from '../../images/model-s.jpg';
 
 
-const Home = ({backgroundImgs}) => {
+
+const Home = ({backgroundImg}) => {
   return (
     <div>
       <Section
@@ -12,35 +15,35 @@ const Home = ({backgroundImgs}) => {
       description="Order Online For Touchless Delivery"
       leftBtnText="Custom order"
       rightBtnText="Exiting Inventory"
-      backgroundImg={model}
+      backgroundImg="model-x.jpg"
       />
       <Section
        title="Model Y"
        description="Order Online For Touchless Delivery"
        leftBtnText="Custom order"
        rightBtnText="Exiting Inventory"
-       backgroundImg='../../images/images/model-x.jpg'
+       backgroundImg="model-y.jpg"
       />
       <Section
        title="Model X"
        description="Order Online For Touchless Delivery"
        leftBtnText="Custom order"
        rightBtnText="Exiting Inventory"
-       backgroundImg="/src/images/images/model-s.jpg"
+       backgroundImg="model-s.jpg"
       />
       <Section 
-        title="Model M"
+        title="Model 3"
         description="Order Online For Touchless Delivery"
         leftBtnText="Custom order"
         rightBtnText="Exiting Inventory"
-        backgroundImg="../../images/images/down-arrow.svg"
+        backgroundImg="model-3.jpg"
       />
       <Section
-        title="Model L"
+        title="Solar panel"
         description="Order Online For Touchless Delivery"
         leftBtnText="Custom order"
         rightBtnText="Exiting Inventory"
-        backgroundImg="model-s.jpg"
+        backgroundImg="solar-panel.jpg"
       />
     </div>
   )

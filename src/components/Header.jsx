@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import styled from "styled-components"
-import Logo from '../images/images/logo.svg'
+import Logo from '../images/logo.svg'
+
 import { AiOutlineMenu } from 'react-icons/ai';
 import {AiOutlineClose} from 'react-icons/ai'
 import { selectCars } from '../car/carSlice';
