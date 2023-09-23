@@ -3,9 +3,13 @@ import styled from "styled-components"
 import Logo from '../images/images/logo.svg'
 import { AiOutlineMenu } from 'react-icons/ai';
 import {AiOutlineClose} from 'react-icons/ai'
+import { selectCars } from '../car/carSlice';
+import {useSelector} from 'react-redux'
 
 const Header = () => {
   const [burgerStatus, setBurgerStatus] = useState(false);
+  const cars = useSelector(selectCars)
+
   return (
     <Container>
       <a href="">
@@ -13,10 +17,11 @@ const Header = () => {
       </a>
 
       <Menu>
-      <a href="#">Model S</a>
-       <a href="#">Model 3</a>
-      <a href="#">Model X</a>
-       <a href="#">Model Y</a>
+        {cars && cars.map((car,index)=>(
+            <a href="#" key={index}>{car}</a>
+        ))}
+     
+       
       </Menu>
 
       <RightMenu>
