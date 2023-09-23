@@ -91,4 +91,10 @@ const BurgerNav = styled.div`
    z-index:100;
    width:300px;
    background:#ffff;
+   list-style:none;
+   padding:10px;
+
+   li{
+    padding:10px 0;
+   }
 `
