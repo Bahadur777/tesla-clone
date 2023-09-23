@@ -1,17 +1,12 @@
 import React from 'react'
 import Section from '../section/Section'
 import './home.css'
-import model3Img from '../../images/model-3.jpg';
-import modelXImg from '../../images/model-x.jpg';
-import modelSImg from '../../images/model-s.jpg';
-
-
 
 const Home = ({backgroundImg}) => {
   return (
     <div>
       <Section
-      title="Model S"
+      title="Model X"
       description="Order Online For Touchless Delivery"
       leftBtnText="Custom order"
       rightBtnText="Exiting Inventory"
@@ -25,7 +20,7 @@ const Home = ({backgroundImg}) => {
        backgroundImg="model-y.jpg"
       />
       <Section
-       title="Model X"
+       title="Model s"
        description="Order Online For Touchless Delivery"
        leftBtnText="Custom order"
        rightBtnText="Exiting Inventory"
@@ -39,12 +34,27 @@ const Home = ({backgroundImg}) => {
         backgroundImg="model-3.jpg"
       />
       <Section
+        title="New interior"
+        description="Order Online For Touchless Delivery"
+        leftBtnText="Custom order"
+        rightBtnText="Exiting Inventory"
+        backgroundImg="new-interior.jpg"
+      />
+      <Section
         title="Solar panel"
         description="Order Online For Touchless Delivery"
         leftBtnText="Custom order"
         rightBtnText="Exiting Inventory"
         backgroundImg="solar-panel.jpg"
       />
+      <Section
+        title="Solar roof"
+        description="Order Online For Touchless Delivery"
+        leftBtnText="Custom order"
+        rightBtnText="Exiting Inventory"
+        backgroundImg="solar-roof.jpg"
+      />
+      
     </div>
   )
 }

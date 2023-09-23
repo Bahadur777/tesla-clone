@@ -34,12 +34,18 @@ const Header = () => {
         <CloseWarper>
         <CustomCloss onClick={()=>setBurgerStatus(false)} />
         </CloseWarper>
-        <li><a href="#">Existing Inventory</a></li>
-        <li><a href="#">Existing Inventory</a></li>
-        <li><a href="#">Existing Inventory</a></li>
-        <li><a href="#">Existing Inventory</a></li>
-        <li><a href="#">Existing Inventory</a></li>
-        <li><a href="#">Existing Inventory</a></li>
+        <li><a href="#">Inventory</a></li>
+        <li><a href="#">Used Cars</a></li>
+        <li><a href="#">Demo Drive</a></li>
+        <li><a href="#">Trade-in</a></li>
+        <li><a href="#">Help Me Choose</a></li>
+        <li><a href="#">Fleet</a></li>
+        <li><a href="#">Cybertruck</a></li>
+        <li><a href="#">Semi</a></li>
+        <li><a href="#">Roadster</a></li>
+        <li><a href="#">Schedule a Consultation</a></li>
+        <li><a href="#">Incentives</a></li>
+
 
       </BurgerNav>
     </Container>
