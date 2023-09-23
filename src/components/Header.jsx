@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from "styled-components"
 import Logo from '../images/images/logo.svg'
 import { AiOutlineMenu } from 'react-icons/ai';
+import {AiOutlineClose} from 'react-icons/ai'
 
 const Header = () => {
+  const [burgerStatus, setBurgerStatus] = useState(false);
   return (
     <Container>
       <a href="">
@@ -20,9 +22,12 @@ const Header = () => {
       <RightMenu>
           <a href="#">Shop</a>
           <a href="#">Tesla account</a>
-         <CustomIcons/>
+         <CustomIcons onClick={()=>setBurgerStatus(true)} />
       </RightMenu>
-      <BurgerNav>
+      <BurgerNav show={burgerStatus}>
+        <CloseWarper>
+        <CustomCloss onClick={()=>setBurgerStatus(false)} />
+        </CloseWarper>
         <li><a href="#">Existing Inventory</a></li>
         <li><a href="#">Existing Inventory</a></li>
         <li><a href="#">Existing Inventory</a></li>
@@ -66,7 +71,7 @@ const Menu = styled.div `
   text-transform: uppercase;
  }
 
- @media(max-width:760px){
+ @media(max-width:768px){
   display:none;
  }
 `
@@ -93,8 +98,20 @@ const BurgerNav = styled.div`
    background:#ffff;
    list-style:none;
    padding:10px;
-
+  transform: ${props =>props.show ? 'translateX(0)' : 'translateX(100%)'};
+  transition:transform 0.2s ease-in;
    li{
     padding:10px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, .3)
    }
 `
+const CloseWarper =styled.div`
+ display:flex;
+ justify-content:flex-end
+`
+const CustomCloss = styled(AiOutlineClose)`
+
+cursor:pointer;
+font-size:30px;
+`
+
