@@ -25,11 +25,11 @@ const Section = ({title, description, rightBtnText, leftBtnText, backgroundImg} 
 export default Section
 
 const Warp = styled.div `
-width: 100vw;
+width: 100%;
 height: 100vh;
 text-align: center;
  background-image: url('/src/images/model-s.jpg'); 
-background-position: center;
+ background-position: center;
 background-size: cover;
 background-repeat: no-repeat;
 background-image:${props=>`url("src/images/${props.backgroundImg}")`};

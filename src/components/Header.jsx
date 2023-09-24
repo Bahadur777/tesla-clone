@@ -96,6 +96,14 @@ const RightMenu = styled.div`
       font-weight:600;
       text-transform: uppercase;
      }
+     @media(max-width:320px){
+     gap:8px;
+     a{
+      font-weight:300;
+      font-size:12px;
+      
+     }
+     }
 `
 const CustomIcons = styled(AiOutlineMenu)`
 cursor:pointer;
@@ -124,6 +132,6 @@ const CloseWarper =styled.div`
 const CustomCloss = styled(AiOutlineClose)`
 
 cursor:pointer;
-font-size:30px;
+font-size:20px;
 `
 

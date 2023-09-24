@@ -39,3 +39,9 @@
     overflow: hidden;
     animation: animateDown infinite 5.5ms ease-in-out;
 }
+
+@media(max-width:425px){
+   .btn-group{
+    gap:0.5rem;
+   }
+   }
